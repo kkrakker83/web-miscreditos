@@ -4,15 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mis Créditos | Gestión inteligente de cobranza para PYMEs</title>
-  <meta name="description" content="Mis Créditos ayuda a PYMEs y microempresarios de Chile a profesionalizar su cobranza y dejar atrás las hojas de cálculo." />
+  <meta name="description" content="Mis Créditos ayuda a PYMEs y microempresarios de Chile a profesionalizar su cobranza, reemplazar su Excel y cobrar más rápido.">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-slate-50 text-slate-900">
+
+  <!-- NAVBAR -->
   <header class="sticky top-0 z-50 bg-white shadow-md">
     <div class="max-w-6xl mx-auto px-4">
       <nav class="flex items-center justify-between py-4">
         <a href="#hero" class="flex items-center space-x-3">
           <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-emerald-100">
+            <!-- LOGO PINGÜINO -->
             <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-slate-900">
               <circle cx="60" cy="60" r="58" fill="#1e293b" />
               <path d="M42 44c6-8 18-12 27-6 12 8 9 26-6 30 6 2 11 5 14 10 4 7 3 16-3 22s-16 8-24 5c-8 0-18 1-23-6-6-8-3-20 6-26-10-6-10-22 0-29 3-2 6-3 9-3z" fill="#f8fafc" />
@@ -24,161 +28,86 @@
           </span>
           <span class="text-xl font-semibold text-slate-900">Mis Créditos</span>
         </a>
+
         <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-700">
           <a href="#beneficios" class="hover:text-emerald-500 transition">Beneficios</a>
           <a href="#caracteristicas" class="hover:text-emerald-500 transition">Características</a>
           <a href="#precios" class="hover:text-emerald-500 transition">Precios</a>
           <a href="#faq" class="hover:text-emerald-500 transition">Preguntas Frecuentes</a>
         </div>
-        <a href="https://miscreditos.railway.app" class="hidden md:inline-flex items-center px-4 py-2 border border-emerald-500 text-emerald-600 rounded-full text-sm font-semibold hover:bg-emerald-500 hover:text-white transition">Login Clientes</a>
-        <button class="md:hidden inline-flex items-center justify-center w-10 h-10 text-slate-500" aria-label="Abrir menú">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
+
+        <a href="https://miscreditos.railway.app"
+           class="hidden md:inline-flex items-center px-4 py-2 border border-emerald-500 text-emerald-600 rounded-full text-sm font-semibold hover:bg-emerald-500 hover:text-white transition">
+           Login Clientes
+        </a>
       </nav>
     </div>
   </header>
 
+  <!-- HERO -->
   <main>
     <section id="hero" class="bg-gradient-to-b from-slate-100 to-white py-16 md:py-24">
       <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+
+        <!-- HERO TEXT -->
         <div>
-          <h1 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">Deja de perseguir pagos en un Excel.</h1>
-          <p class="mt-6 text-slate-600 leading-relaxed">Eres un DESARROLLADOR FRONTEND EXPERTO y DISEÑADOR UI/UX, especializado en crear landing pages B2B de alta conversión enfocadas en generación de leads.
+          <h1 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+            Deja de perseguir pagos en un Excel.
+          </h1>
 
-🎯 OBJETIVO PRINCIPAL
-Generar un archivo `index.html` COMPLETO, LISTO PARA PUBLICAR, que será colocado directamente por Codex en el repositorio de GitHub donde estoy trabajando.  
-Después conectaré un dominio personalizado desde GitHub Pages, por lo que el archivo debe estar totalmente listo para funcionar inmediatamente sin dependencias adicionales.
+          <p class="mt-6 text-slate-600 leading-relaxed">
+            Mis Créditos es el software simple y profesional que reemplaza tu Excel de cobranza,
+            te ayuda a cobrar más rápido y te da control total de tus clientes, cuotas y pronóstico de caja.
+          </p>
 
-⚠️ FORMATO DE RESPUESTA (MUY IMPORTANTE)
-- Devuélveme **ÚNICAMENTE** el contenido completo del archivo `index.html`.
-- NO incluyas explicaciones, comentarios ni texto fuera del archivo.
-- Debe ser un archivo totalmente funcional para publicar vía GitHub Pages.
-
-🧩 REQUISITOS TÉCNICOS
-- **Archivo único:** todo en `index.html`.
-- **CSS:** usar SOLO Tailwind CSS (CDN).  
-  No usar `<style>`, no CSS externo.
-- **JavaScript:** no usar JS complejo; únicamente HTML + Tailwind.
-- **Responsive:** completamente mobile-first y 100% responsive.
-- **Scroll suave:** en `<html class="scroll-smooth">`.
-- **Optimizado para GitHub Pages:**  
-  - No usar rutas absolutas.  
-  - No llamar archivos externos que dependan de carpetas adicionales.  
-  - El SVG debe estar INLINE y no como archivo separado.
-
-🎨 IDENTIDAD DE MARCA
-- Nombre: **Mis Créditos**
-- URL base: **miscreditos**
-- Logo: **Pingüino minimalista profesional (SVG inline)**.
-- Colores: Azul Marino, Gris, Verde Menta.
-- Público: PYMEs y microempresarios de Chile.
-- Tono: Confiable, simple, profesional.
-
-📐 ESTRUCTURA OBLIGATORIA DEL `index.html`
-
-1) NAVBAR (STICKY)
-- Fija arriba (sticky top-0).
-- Logo (SVG pingüino + texto Mis Créditos).
-- Links: Beneficios | Características | Precios | Preguntas Frecuentes.
-- Botón “Login Clientes” → https://miscreditos.railway.app (o placeholder).
-- Estilo profesional con sombra leve.
-
-2) HERO + FORMULARIO LEAD-GEN
-- ID: `hero` y el formulario `hero-form` (anchor requerido).
-- H1: **"Deja de perseguir pagos en un Excel."**
-- Subtítulo: texto completo del prompt original.
-- Formulario HTML real:
-  - `<form method="POST" action="[TU_URL_DE_AWEBER_MAILCHIMP_AQUI]">`
-  - Campos:
-    - Nombre Completo
-    - Correo Electrónico
-  - Botón verde menta: **"Iniciar Prueba Gratuita de 7 Días"**
-  - Texto pequeño: “Sin tarjeta de crédito requerida para iniciar.”
-- Layout: 2 columnas en desktop, 1 en móvil.
-
-3) SECCIÓN VIDEO: “Ver es Creer”
-- Placeholder de video (div 16:9 con ícono de play).
-- Diseño visual elegante.
-
-4) BENEFICIOS
-- Título: **"Tu negocio, pero con más control"**
-- Grid de 3 tarjetas: Claridad Total, Profesionaliza tu Cobranza, Mejores Decisiones.
-
-5) CARACTERÍSTICAS
-- Título: **"Todo lo que necesitas para reemplazar tu Excel"**
-- Grid 4 columnas:
-  - Panel General Instantáneo
-  - Planes de Pago Flexibles (incluye 0% interés)
-  - Registro de Pagos y Abonos
-  - Historial y Recibos
-
-6) PRECIOS
-- Título: **"Un precio simple, sin sorpresas."**
-- Tarjeta única al centro:
-  - Precio: **$14.990 CLP / mes**
-  - “Precio final. Sin + IVA.”
-  - Lista de beneficios.
-- CTA secundario:  
-  `<a href="#hero-form">Comienza tu Prueba de 7 Días</a>`
-
-7) PREGUNTAS FRECUENTES (FAQ)
-- Usar `<details>` + `<summary>`.
-- Incluir estas preguntas obligatorias:
-  - “¿Necesito tarjeta de crédito para empezar?”  
-    Respuesta debe explicar:  
-    "No para registrarte en la lista. El email que te enviaremos te guiará al registro en la plataforma donde sí te pediremos tus datos de pago para activar la prueba…"
-  - Otras 2–3 preguntas.
-
-8) FOOTER
-- Fondo oscuro.
-- Logo pequeño + texto Mis Créditos.
-- Copyright.
-- Enlaces pequeños (placeholder).
-
-🧱 ESTILO (TAILWIND REQUERIDO)
-- Contenedores: `max-w-6xl mx-auto px-4`
-- Espaciados: `py-16`, `py-24`, etc.
-- Tipografía clara y moderna.
-- Sombras suaves: `shadow-md`, `shadow-lg`.
-- Bordes: `rounded-xl`, `rounded-2xl`.
-- Colores: usa verde menta (`emerald-400/500`) como CTA.
-- No usar CSS externo ni estilos inline.
-
-📌 RECORDATORIO FINAL
-- TODO debe estar en un solo `index.html`.
-- Debe funcionar directamente al subirlo a GitHub Pages.
-- No generes carpetas, no generes archivos adicionales.
-- NO escribas ningún texto ni comentario fuera del HTML.</p>
+          <ul class="mt-6 space-y-2 text-slate-600 text-sm">
+            <li>• Visibilidad clara de quién te debe, cuánto y desde cuándo.</li>
+            <li>• Planes de pago flexibles, con o sin interés.</li>
+            <li>• Registro de abonos y recibos profesionales.</li>
+          </ul>
         </div>
+
+        <!-- FORMULARIO -->
         <div class="bg-white rounded-2xl shadow-lg p-8">
           <h2 class="text-2xl font-semibold text-slate-900">Centraliza tus cobros y enfócate en crecer.</h2>
-          <p class="mt-3 text-sm text-slate-500">Completa el formulario y recibe acceso inmediato a una demo guiada.</p>
+          <p class="mt-3 text-sm text-slate-500">Comienza tu prueba gratuita de 7 días.</p>
+
           <form id="hero-form" method="POST" action="[TU_URL_DE_AWEBER_MAILCHIMP_AQUI]" class="mt-8 space-y-5">
             <div>
               <label for="nombre" class="block text-sm font-medium text-slate-700">Nombre Completo</label>
-              <input id="nombre" name="nombre" type="text" required placeholder="Ingresa tu nombre" class="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200" />
+              <input id="nombre" name="nombre" type="text" required placeholder="Ingresa tu nombre"
+                     class="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900
+                     focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200" />
             </div>
+
             <div>
               <label for="correo" class="block text-sm font-medium text-slate-700">Correo Electrónico</label>
-              <input id="correo" name="correo" type="email" required placeholder="ejemplo@empresa.cl" class="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200" />
+              <input id="correo" name="correo" type="email" required placeholder="ejemplo@empresa.cl"
+                     class="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900
+                     focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200" />
             </div>
-            <button type="submit" class="w-full rounded-xl bg-emerald-500 px-6 py-4 text-base font-semibold text-white shadow-md hover:bg-emerald-400 transition">Iniciar Prueba Gratuita de 7 Días</button>
-            <p class="text-xs text-slate-500 text-center">Sin tarjeta de crédito requerida para iniciar.</p>
+
+            <button type="submit"
+                    class="w-full rounded-xl bg-emerald-500 px-6 py-4 text-base font-semibold text-white shadow-md hover:bg-emerald-400 transition">
+              Iniciar Prueba Gratuita de 7 Días
+            </button>
+
+            <p class="text-xs text-slate-500 text-center">Sin tarjeta de crédito requerida.</p>
           </form>
         </div>
       </div>
     </section>
 
+    <!-- VIDEO -->
     <section class="py-16 md:py-20">
       <div class="max-w-4xl mx-auto px-4 text-center">
         <h2 class="text-3xl font-bold text-slate-900">Ver es Creer</h2>
-        <p class="mt-4 text-slate-600">Descubre en minutos cómo Mis Créditos transforma la gestión de cobranza en una experiencia profesional y sin estrés.</p>
+        <p class="mt-4 text-slate-600">Descubre en minutos cómo Mis Créditos transforma tu cobranza.</p>
+
         <div class="mt-10 relative aspect-video w-full rounded-2xl bg-slate-200 flex items-center justify-center shadow-lg">
           <div class="flex flex-col items-center">
             <span class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-emerald-500 text-white shadow-lg">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-10 h-10">
                 <path d="M8 5v14l11-7-11-7z" />
               </svg>
             </span>
@@ -188,96 +117,152 @@ Después conectaré un dominio personalizado desde GitHub Pages, por lo que el a
       </div>
     </section>
 
+    <!-- BENEFICIOS -->
     <section id="beneficios" class="bg-white py-16 md:py-24">
       <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 text-center">Tu negocio, pero con más control</h2>
-        <p class="mt-4 text-center text-slate-600 max-w-3xl mx-auto">La plataforma de cobranza que se adapta a la forma en que tu empresa crece. Mantén la visibilidad completa de cada pago, reduce la morosidad y proyecta tu flujo de caja con certeza.</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 text-center">
+          Tu negocio, pero con más control
+        </h2>
+
+        <p class="mt-4 text-center text-slate-600 max-w-3xl mx-auto">
+          La plataforma que te da visibilidad completa de cada pago, reduce la morosidad
+          y te permite proyectar tu flujo de caja con certeza.
+        </p>
+
         <div class="mt-12 grid gap-8 md:grid-cols-3">
           <div class="bg-slate-50 rounded-2xl p-8 shadow-md">
             <h3 class="text-xl font-semibold text-slate-900">Claridad Total</h3>
-            <p class="mt-3 text-slate-600">Visualiza en segundos quién te debe, cuánto y desde cuándo. Reportes claros para cada equipo y stakeholder.</p>
+            <p class="mt-3 text-slate-600">Visualiza quién te debe, cuánto y desde cuándo.</p>
           </div>
           <div class="bg-slate-50 rounded-2xl p-8 shadow-md">
             <h3 class="text-xl font-semibold text-slate-900">Profesionaliza tu Cobranza</h3>
-            <p class="mt-3 text-slate-600">Automatiza recordatorios, define políticas de seguimiento y demuestra a tus clientes que manejas tus finanzas con seriedad.</p>
+            <p class="mt-3 text-slate-600">Automatiza recordatorios y mejora tu imagen ante tus clientes.</p>
           </div>
           <div class="bg-slate-50 rounded-2xl p-8 shadow-md">
             <h3 class="text-xl font-semibold text-slate-900">Mejores Decisiones</h3>
-            <p class="mt-3 text-slate-600">Anticipa cuellos de botella, estima tu flujo mensual y toma decisiones con datos en tiempo real.</p>
+            <p class="mt-3 text-slate-600">Anticipa problemas, estima tu flujo mensual y actúa con datos.</p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- CARACTERÍSTICAS -->
     <section id="caracteristicas" class="py-16 md:py-24 bg-gradient-to-b from-white to-slate-100">
       <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 text-center">Todo lo que necesitas para reemplazar tu Excel</h2>
-        <p class="mt-4 text-center text-slate-600 max-w-3xl mx-auto">Con Mis Créditos tienes una plataforma completa para gestionar tus cuentas por cobrar con precisión, flexibilidad y soporte local.</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 text-center">
+          Todo lo que necesitas para reemplazar tu Excel
+        </h2>
+
+        <p class="mt-4 text-center text-slate-600 max-w-3xl mx-auto">
+          Una plataforma completa para gestionar tus cuentas por cobrar con precisión,
+          flexibilidad y soporte local.
+        </p>
+
         <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+
           <div class="bg-white rounded-2xl p-6 shadow-md">
             <h3 class="text-lg font-semibold text-slate-900">Panel General Instantáneo</h3>
-            <p class="mt-3 text-sm text-slate-600">Monitorea saldos, clientes y estados de pago en un panel único que se actualiza al instante.</p>
+            <p class="mt-3 text-sm text-slate-600">Visualiza saldos, clientes y estados de pago.</p>
           </div>
+
           <div class="bg-white rounded-2xl p-6 shadow-md">
             <h3 class="text-lg font-semibold text-slate-900">Planes de Pago Flexibles</h3>
-            <p class="mt-3 text-sm text-slate-600">Ofrece cuotas personalizadas, recordatorios automáticos y convenios con 0% interés cuando lo necesites.</p>
+            <p class="mt-3 text-sm text-slate-600">Cuotas personalizadas con o sin interés.</p>
           </div>
+
           <div class="bg-white rounded-2xl p-6 shadow-md">
             <h3 class="text-lg font-semibold text-slate-900">Registro de Pagos y Abonos</h3>
-            <p class="mt-3 text-sm text-slate-600">Documenta abonos, notas de crédito y actualizaciones de forma rápida para todo tu equipo.</p>
+            <p class="mt-3 text-sm text-slate-600">Documenta pagos parciales y recalcula automáticamente.</p>
           </div>
+
           <div class="bg-white rounded-2xl p-6 shadow-md">
             <h3 class="text-lg font-semibold text-slate-900">Historial y Recibos</h3>
-            <p class="mt-3 text-sm text-slate-600">Genera recibos, descarga estados y conserva el historial completo para auditorías y reportes.</p>
+            <p class="mt-3 text-sm text-slate-600">Genera recibos profesionales y conserva el historial completo.</p>
           </div>
+
         </div>
       </div>
     </section>
 
+    <!-- PRECIOS -->
     <section id="precios" class="py-16 md:py-24 bg-white">
       <div class="max-w-4xl mx-auto px-4 text-center">
         <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Un precio simple, sin sorpresas.</h2>
-        <p class="mt-4 text-slate-600">Tarifa plana pensada para empresas que valoran la claridad y necesitan crecer sin costos inesperados.</p>
+        <p class="mt-4 text-slate-600">Tarifa plana pensada para PYMEs y negocios que valoran claridad y eficiencia.</p>
+
         <div class="mt-12 bg-slate-900 text-white rounded-3xl shadow-xl p-10 md:p-12">
           <div class="text-sm uppercase tracking-widest text-emerald-300">Plan Profesional</div>
+
           <div class="mt-4 flex items-baseline justify-center space-x-2">
             <span class="text-5xl font-bold">$14.990</span>
             <span class="text-sm">CLP / mes</span>
           </div>
+
           <p class="mt-2 text-sm text-slate-300">Precio final. Sin + IVA.</p>
+
           <ul class="mt-8 space-y-3 text-left max-w-sm mx-auto">
-            <li class="flex items-start space-x-3"><span class="mt-1 w-2.5 h-2.5 rounded-full bg-emerald-400"></span><span>Usuarios ilimitados para tu equipo financiero.</span></li>
-            <li class="flex items-start space-x-3"><span class="mt-1 w-2.5 h-2.5 rounded-full bg-emerald-400"></span><span>Reportes automáticos y exportación en CSV.</span></li>
-            <li class="flex items-start space-x-3"><span class="mt-1 w-2.5 h-2.5 rounded-full bg-emerald-400"></span><span>Soporte prioritario con especialistas en cobranza.</span></li>
-            <li class="flex items-start space-x-3"><span class="mt-1 w-2.5 h-2.5 rounded-full bg-emerald-400"></span><span>Actualizaciones constantes incluidas.</span></li>
+            <li class="flex items-start space-x-3">
+              <span class="mt-1 w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+              <span>Clientes ilimitados.</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="mt-1 w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+              <span>Reportes automáticos y exportación.</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="mt-1 w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+              <span>Soporte prioritario con especialistas.</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="mt-1 w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+              <span>Actualizaciones constantes incluidas.</span>
+            </li>
           </ul>
-          <a href="#hero-form" class="mt-10 inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 hover:bg-emerald-100 transition">Comienza tu Prueba de 7 Días</a>
+
+          <a href="#hero-form"
+             class="mt-10 inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 hover:bg-emerald-100 transition">
+             Comienza tu Prueba de 7 Días
+          </a>
         </div>
       </div>
     </section>
 
+    <!-- FAQ -->
     <section id="faq" class="py-16 md:py-24 bg-slate-50">
       <div class="max-w-4xl mx-auto px-4">
         <h2 class="text-3xl md:text-4xl font-bold text-slate-900 text-center">Preguntas Frecuentes</h2>
         <p class="mt-4 text-center text-slate-600">Resolvemos tus dudas más comunes para que avances con confianza.</p>
+
         <div class="mt-10 space-y-6">
+
           <details class="bg-white rounded-2xl p-6 shadow-md">
             <summary class="text-lg font-semibold text-slate-900 cursor-pointer">¿Necesito tarjeta de crédito para empezar?</summary>
-            <p class="mt-3 text-slate-600">No para registrarte en la lista. El email que te enviaremos te guiará al registro en la plataforma donde sí te pediremos tus datos de pago para activar la prueba y asegurar que tu cuenta quede protegida.</p>
+            <p class="mt-3 text-slate-600">
+              No para registrarte en esta página. Te enviaremos un email que te guiará al registro
+              dentro de la plataforma, donde sí podrás ingresar tus datos para activar tu prueba gratuita.
+            </p>
           </details>
+
           <details class="bg-white rounded-2xl p-6 shadow-md">
             <summary class="text-lg font-semibold text-slate-900 cursor-pointer">¿Cuánto demora la implementación?</summary>
-            <p class="mt-3 text-slate-600">En promedio, nuestros clientes cargan su cartera y configuran recordatorios en menos de 48 horas gracias a nuestras plantillas y acompañamiento experto.</p>
+            <p class="mt-3 text-slate-600">
+              En menos de 48 horas puedes cargar tu cartera, configurar recordatorios y comenzar a operar.
+            </p>
           </details>
+
           <details class="bg-white rounded-2xl p-6 shadow-md">
-            <summary class="text-lg font-semibold text-slate-900 cursor-pointer">¿Puedo invitar a mi contador o asesor externo?</summary>
-            <p class="mt-3 text-slate-600">Sí. Mis Créditos permite usuarios ilimitados para que puedas compartir la información con quien necesites y mantener el control centralizado.</p>
+            <summary class="text-lg font-semibold text-slate-900 cursor-pointer">¿Puedo invitar a mi contador o asesor?</summary>
+            <p class="mt-3 text-slate-600">
+              Sí, puedes agregar usuarios ilimitados para mantener un control centralizado y profesional.
+            </p>
           </details>
+
         </div>
       </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="bg-slate-900 text-slate-300 py-12">
     <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center md:items-start justify-between space-y-8 md:space-y-0">
       <div class="flex items-center space-x-3">
@@ -293,8 +278,10 @@ Después conectaré un dominio personalizado desde GitHub Pages, por lo que el a
         </span>
         <span class="text-lg font-semibold text-white">Mis Créditos</span>
       </div>
+
       <div class="text-sm space-y-2 text-center md:text-left">
-        <p>&copy; <span id="year">2024</span> Mis Créditos. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Mis Créditos. Todos los derechos reservados.</p>
+
         <div class="flex items-center justify-center md:justify-start space-x-4">
           <a href="#" class="hover:text-emerald-400 transition">Términos</a>
           <a href="#" class="hover:text-emerald-400 transition">Privacidad</a>
@@ -303,5 +290,6 @@ Después conectaré un dominio personalizado desde GitHub Pages, por lo que el a
       </div>
     </div>
   </footer>
+
 </body>
 </html>
