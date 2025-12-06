@@ -6,6 +6,21 @@
     <title>Mis Créditos - Acceso Gratuito</title>
     <meta name="description" content="Ordena tu cuaderno de fiados. Acceso gratuito a Mis Créditos.">
     
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1152965670304389');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1152965670304389&ev=PageView&noscript=1"
+    /></noscript>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -100,7 +115,7 @@
                                 class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-brand-500 focus:ring-2 focus:ring-brand-200 outline-none transition bg-gray-50">
                         </div>
                         
-                        <button type="submit" class="w-full bg-brand-500 hover:bg-brand-600 text-white font-bold py-4 rounded-lg text-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+                        <button type="submit" onclick="fbq('track', 'Lead');" class="w-full bg-brand-500 hover:bg-brand-600 text-white font-bold py-4 rounded-lg text-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
                             👉 Recibir mi acceso GRATIS ahora
                         </button>
                         
