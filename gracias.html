@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gracias por registrarte! - Mis Créditos</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            500: '#10B981', 
+                            600: '#059669',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1152965670304389');
+    
+    // AQUÍ ESTÁ LA MAGIA: Traqueamos el evento "Lead" (Cliente Potencial)
+    fbq('track', 'Lead');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1152965670304389&ev=Lead&noscript=1"/>
+    </noscript>
+    <script>
+        // Esperar 5 segundos (5000 milisegundos) y redirigir
+        setTimeout(function(){
+            window.location.href = "https://www.miscreditos.cl";
+        }, 5000);
+    </script>
+</head>
+<body class="bg-gray-50 h-screen flex items-center justify-center px-4">
+
+    <div class="bg-white p-8 md:p-12 rounded-2xl shadow-xl text-center max-w-lg w-full border border-gray-100">
+        
+        <div class="mb-6 flex justify-center">
+            <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center animate-bounce">
+                <svg class="w-10 h-10 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+            </div>
+        </div>
+
+        <h1 class="text-3xl font-extrabold text-gray-900 mb-4">¡Registro Exitoso!</h1>
+        
+        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+            Gracias por registrarte. Te hemos enviado un correo con los datos para ingresar a tu prueba gratuita.
+        </p>
+        
+        <div class="bg-blue-50 text-blue-800 text-sm py-3 px-4 rounded-lg mb-6 inline-block">
+            📩 Revisa tu bandeja de entrada (o Spam por si acaso).
+        </div>
+
+        <p class="text-sm text-gray-400 mb-2">
+            Serás redirigido a nuestra web en <span id="countdown" class="font-bold text-brand-600">5</span> segundos...
+        </p>
+
+        <div class="w-full bg-gray-200 rounded-full h-1.5 mb-6 overflow-hidden">
+            <div class="bg-brand-500 h-1.5 rounded-full w-full animate-[width_5s_linear_reverse]"></div>
+        </div>
+
+        <a href="https://www.miscreditos.cl" class="text-brand-600 font-bold hover:underline text-sm">
+            ¿No quieres esperar? Haz clic aquí.
+        </a>
+    </div>
+
+    <script>
+        let timeLeft = 5;
+        const countdownElement = document.getElementById('countdown');
+        const timerId = setInterval(() => {
+            if (timeLeft <= 0) {
+                clearInterval(timerId);
+            } else {
+                countdownElement.textContent = timeLeft;
+                timeLeft--;
+            }
+        }, 1000);
+    </script>
+
+    <style>
+        /* Animación simple para la barra de progreso */
+        @keyframes width {
+            from { width: 100%; }
+            to { width: 0%; }
+        }
+    </style>
+
+</body>
+</html>
