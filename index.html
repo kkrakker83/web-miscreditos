@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mis Créditos | Gestión inteligente de cobranza para PYMEs</title>
+  <title>Mis Créditos | No más fiados olvidados</title>
   
   <script>
   !function(f,b,e,v,n,t,s)
@@ -21,7 +21,7 @@
     <img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1152965670304389&ev=PageView&noscript=1"/>
   </noscript>
-  <meta name="description" content="Mis Créditos ayuda a PYMEs y microempresarios de Chile a profesionalizar su cobranza y dejar atrás las hojas de cálculo." />
+  <meta name="description" content="Deja de perder plata por fiados olvidados. Controla tu negocio desde el celular con Mis Créditos." />
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
@@ -82,18 +82,20 @@
       padding: 0.75rem 1rem !important;
       border-radius: 0.375rem !important;
       border: none !important;
-      font-size: 1rem !important;
+      font-size: 1.1rem !important; 
       cursor: pointer !important;
       transition: background-color 0.3s !important;
       display: flex !important;
       justify-content: center !important;
       align-items: center !important;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     }
     .sib-form-block__button:hover {
       background-color: #059669 !important; /* emerald-600 */
+      transform: translateY(-1px);
     }
 
-    /* Animación del Loader (Esencial para Brevo) */
+    /* Animación del Loader */
     .sib-loader-icon {
       width: 1.25rem !important;
       height: 1.25rem !important;
@@ -126,7 +128,8 @@
     .sib-icon { width: 16px; height: 16px; }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-slate-50 text-slate-900 font-sans">
+  
   <header class="sticky top-0 z-50 bg-white shadow-md">
     <div class="max-w-6xl mx-auto px-4">
       <nav class="flex items-center justify-between py-4">
@@ -144,63 +147,62 @@
           <span class="text-xl font-semibold text-slate-900">Mis Créditos</span>
         </a>
         <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-700">
+          <a href="#como-funciona" class="hover:text-emerald-500 transition">Cómo funciona</a>
           <a href="#beneficios" class="hover:text-emerald-500 transition">Beneficios</a>
-          <a href="#caracteristicas" class="hover:text-emerald-500 transition">Características</a>
           <a href="#precios" class="hover:text-emerald-500 transition">Precios</a>
-          <a href="#faq" class="hover:text-emerald-500 transition">Preguntas Frecuentes</a>
         </div>
-        <a href="https://app.miscreditos.cl/" class="hidden md:inline-flex items-center px-4 py-2 border border-emerald-500 text-emerald-600 rounded-full text-sm font-semibold hover:bg-emerald-500 hover:text-white transition">Login Clientes</a>
-        <button class="md:hidden inline-flex items-center justify-center w-10 h-10 text-slate-500" aria-label="Abrir menú">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
+        <a href="https://app.miscreditos.cl/" class="hidden md:inline-flex items-center px-4 py-2 border border-emerald-500 text-emerald-600 rounded-full text-sm font-semibold hover:bg-emerald-500 hover:text-white transition">
+            Ingresar
+        </a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section id="hero" class="bg-gradient-to-b from-slate-100 to-white py-16 md:py-24">
+    <section id="hero" class="bg-gradient-to-b from-slate-100 to-white py-12 md:py-20">
       <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
         <div>
-          <h1 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">Deja de perseguir pagos en un Excel.</h1>
-          <p class="mt-6 text-slate-600 leading-relaxed">Automatiza recordatorios, controla flujos de pago y ofrece experiencias de cobro profesionales sin depender de hojas de cálculo.</p>
-          <ul class="mt-6 space-y-3 text-slate-600">
-            <li class="flex items-start space-x-3">
-              <span class="inline-flex mt-1 h-6 w-6 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
-              <span>Centraliza tus clientes, facturas y estados de pago en un solo lugar.</span>
+          <h1 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+             💸 Deja de perder plata por fiados olvidados
+          </h1>
+          
+          <p class="mt-6 text-xl text-slate-700 leading-relaxed font-medium">
+            Sabe quién te debe, cuánto y desde cuándo. Todo desde tu celular.
+          </p>
+
+          <ul class="mt-8 space-y-4 text-slate-600">
+            <li class="flex items-center space-x-3">
+              <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 font-bold text-lg">✓</span>
+              <span class="text-lg">Registra clientes y fiados en segundos</span>
             </li>
-            <li class="flex items-start space-x-3">
-              <span class="inline-flex mt-1 h-6 w-6 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
-              <span>Automatiza seguimientos con plantillas profesionales y evita olvidos.</span>
+            <li class="flex items-center space-x-3">
+              <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 font-bold text-lg">✓</span>
+              <span class="text-lg">Visualiza tu total por cobrar al instante</span>
             </li>
-            <li class="flex items-start space-x-3">
-              <span class="inline-flex mt-1 h-6 w-6 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">✓</span>
-              <span>Toma decisiones informadas con reportes claros y fáciles de compartir.</span>
+            <li class="flex items-center space-x-3">
+              <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 font-bold text-lg">✓</span>
+              <span class="text-lg">El sistema te recuerda los cobros</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 font-bold text-lg">✓</span>
+              <span class="text-lg">Tus clientes pagan más rápido cuando ven control</span>
             </li>
           </ul>
         </div>
         
-        <div id="hero-form" class="bg-white rounded-2xl shadow-lg p-8">
-          <h2 class="text-2xl font-semibold text-slate-900">Únete a las PYMEs que ya profesionalizaron su cobranza.</h2>
-          <p class="mt-3 text-sm text-slate-500 mb-6">Ningún cobro se hará mientras estés en tu periodo de prueba.</p>
+        <div id="hero-form" class="bg-white rounded-2xl shadow-xl p-8 border border-slate-100">
+          <h2 class="text-2xl font-bold text-slate-900 mb-2">Comienza ahora</h2>
+          <p class="text-sm text-slate-500 mb-6">Crea tu cuenta en 1 minuto.</p>
           
           <div id="sib-form-container" class="sib-form-container">
-            
             <div id="error-message" class="sib-form-message-panel">
               <div class="sib-form-message-panel__text">
-                <svg viewBox="0 0 512 512" class="sib-icon">
-                  <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
-                </svg>
-                <span class="sib-form-message-panel__inner-text">Hubo un error al guardar tu suscripción. Por favor, inténtalo de nuevo.</span>
+                <span class="sib-form-message-panel__inner-text">Hubo un error. Inténtalo de nuevo.</span>
               </div>
             </div>
             <div id="success-message" class="sib-form-message-panel">
               <div class="sib-form-message-panel__text">
-                <svg viewBox="0 0 512 512" class="sib-icon">
-                  <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
-                </svg>
-                <span class="sib-form-message-panel__inner-text">¡Registro exitoso! Gracias por unirte.</span>
+                <span class="sib-form-message-panel__inner-text">¡Registro exitoso!</span>
               </div>
             </div>
 
@@ -211,7 +213,7 @@
                   <div class="form__entry entry_block">
                     <div class="form__label-row">
                       <div class="entry__field">
-                        <input class="input" type="text" id="FIRSTNAME" name="FIRSTNAME" autocomplete="off" placeholder="Nombre" data-required="true" required />
+                        <input class="input" type="text" id="FIRSTNAME" name="FIRSTNAME" autocomplete="off" placeholder="Tu Nombre" data-required="true" required />
                       </div>
                     </div>
                     <label class="entry__error entry__error--primary" style="font-size:13px; text-align:left; color:#991b1b;"></label>
@@ -222,7 +224,7 @@
                   <div class="form__entry entry_block">
                     <div class="form__label-row">
                       <div class="entry__field">
-                        <input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Email" data-required="true" required />
+                        <input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Tu Correo" data-required="true" required />
                       </div>
                     </div>
                     <label class="entry__error entry__error--primary" style="font-size:13px; text-align:left; color:#991b1b;"></label>
@@ -235,7 +237,7 @@
                       <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon sib-loader-icon" viewBox="0 0 512 512">
                         <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
                       </svg>
-                      Comenzar Prueba Gratuita
+                      ➡ Comenzar mi prueba gratuita (sin cobro hoy)
                     </button>
                   </div>
                 </div>
@@ -245,17 +247,56 @@
               </form>
             </div>
           </div>
+          
+          <p class="text-xs text-slate-500 text-center mt-3">
+             🔒 Tu prueba es gratis por 7 días. No se cobra nada hoy.
+          </p>
+
         </div>
-        
       </div>
     </section>
 
-    <section class="py-16 md:py-20">
+    <section id="como-funciona" class="bg-white py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">Cómo funciona en 10 segundos</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-3xl mb-4">
+                        👤
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">1️⃣ Registra un cliente</h3>
+                    <p class="text-slate-600 mb-4">Nombre y número en 5 segundos.</p>
+                    <img src="captura1.png" alt="Registra un cliente" class="w-full h-auto rounded-lg shadow-lg border border-slate-200">
+                </div>
+
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-3xl mb-4">
+                        📝
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">2️⃣ Anota un fiado o abono</h3>
+                    <p class="text-slate-600 mb-4">El sistema calcula todo por ti.</p>
+                    <img src="caprura2.png" alt="Anota un fiado" class="w-full h-auto rounded-lg shadow-lg border border-slate-200">
+                </div>
+
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-3xl mb-4">
+                        🔔
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">3️⃣ Recibe recordatorios</h3>
+                    <p class="text-slate-600 mb-4">Olvida los cuadernos. Nunca más pierdas un cobro.</p>
+                    <img src="captura 3.png" alt="Recibe recordatorios" class="w-full h-auto rounded-lg shadow-lg border border-slate-200">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-slate-900 text-white">
       <div class="max-w-4xl mx-auto px-4 text-center">
-        <h2 class="text-3xl font-bold text-slate-900">Ver es Creer</h2>
-        <p class="mt-4 text-slate-600">Descubre en minutos cómo Mis Créditos transforma la gestión de cobranza en una experiencia profesional y sin estrés.</p>
+        <h2 class="text-3xl font-bold text-white mb-4">Ver es Creer</h2>
+        <p class="mb-8 text-slate-300">Descubre en minutos cómo Mis Créditos transforma tu negocio.</p>
         
-        <div class="mt-10 relative aspect-video w-full rounded-2xl shadow-lg overflow-hidden bg-slate-900">
+        <div class="relative aspect-video w-full rounded-2xl shadow-lg overflow-hidden bg-black border-4 border-slate-700">
           <iframe 
             class="absolute top-0 left-0 w-full h-full" 
             src="https://player.vimeo.com/video/1137431497?title=0&byline=0&portrait=0" 
@@ -270,19 +311,20 @@
     <section id="beneficios" class="bg-white py-16 md:py-24">
       <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-3xl md:text-4xl font-bold text-slate-900 text-center">Tu negocio, pero con más control</h2>
-        <p class="mt-4 text-center text-slate-600 max-w-3xl mx-auto">La plataforma de cobranza que se adapta a la forma en que tu empresa crece. Mantén la visibilidad completa de cada pago, reduce la morosidad y proyecta tu flujo de caja con certeza.</p>
+        <p class="mt-4 text-center text-slate-600 max-w-3xl mx-auto">La herramienta que usan los almacenes que quieren crecer ordenados.</p>
+        
         <div class="mt-12 grid gap-8 md:grid-cols-3">
-          <div class="bg-slate-50 rounded-2xl p-8 shadow-md">
-            <h3 class="text-xl font-semibold text-slate-900">Claridad Total</h3>
-            <p class="mt-3 text-slate-600">Visualiza en segundos quién te debe, cuánto y desde cuándo. Reportes claros para cada equipo y stakeholder.</p>
+          <div class="bg-slate-50 rounded-2xl p-8 shadow-md hover:shadow-lg transition">
+            <h3 class="text-xl font-bold text-emerald-700">Claridad Total</h3>
+            <p class="mt-3 text-slate-700 font-medium">Ve al instante quién te debe, cuánto y desde cuándo. Sin cuadernos, sin enredos.</p>
           </div>
-          <div class="bg-slate-50 rounded-2xl p-8 shadow-md">
-            <h3 class="text-xl font-semibold text-slate-900">Profesionaliza tu Cobranza</h3>
-            <p class="mt-3 text-slate-600">Automatiza recordatorios, define políticas de seguimiento y demuestra a tus clientes que manejas tus finanzas con seriedad.</p>
+          <div class="bg-slate-50 rounded-2xl p-8 shadow-md hover:shadow-lg transition">
+            <h3 class="text-xl font-bold text-emerald-700">Cobra más rápido</h3>
+            <p class="mt-3 text-slate-700 font-medium">Tus clientes pagan antes cuando ven control profesional en tu celular.</p>
           </div>
-          <div class="bg-slate-50 rounded-2xl p-8 shadow-md">
-            <h3 class="text-xl font-semibold text-slate-900">Mejores Decisiones</h3>
-            <p class="mt-3 text-slate-600">Anticipa cuellos de botella, estima tu flujo mensual y toma decisiones con datos en tiempo real.</p>
+          <div class="bg-slate-50 rounded-2xl p-8 shadow-md hover:shadow-lg transition">
+            <h3 class="text-xl font-bold text-emerald-700">No pierdas plata este mes</h3>
+            <p class="mt-3 text-slate-700 font-medium">El sistema te recuerda cada cobro para que no se escape ni uno más.</p>
           </div>
         </div>
       </div>
@@ -290,47 +332,82 @@
 
     <section id="caracteristicas" class="py-16 md:py-24 bg-gradient-to-b from-white to-slate-100">
       <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 text-center">Todo lo que necesitas para reemplazar tu Excel</h2>
-        <p class="mt-4 text-center text-slate-600 max-w-3xl mx-auto">Con Mis Créditos tienes una plataforma completa para gestionar tus cuentas por cobrar con precisión, flexibilidad y soporte local.</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 text-center">Todo lo que necesitas para reemplazar tu cuaderno</h2>
+        
         <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          <div class="bg-white rounded-2xl p-6 shadow-md">
-            <h3 class="text-lg font-semibold text-slate-900">Panel General Instantáneo</h3>
-            <p class="mt-3 text-sm text-slate-600">Monitorea saldos, clientes y estados de pago en un panel único que se actualiza al instante.</p>
+          <div class="bg-white rounded-2xl p-6 shadow-md border-t-4 border-emerald-500">
+            <h3 class="text-lg font-bold text-slate-900">Panel simple para ver todo tu dinero</h3>
+            <p class="mt-3 text-sm text-slate-600">Mira cuánto te deben en total con un solo vistazo.</p>
           </div>
-          <div class="bg-white rounded-2xl p-6 shadow-md">
-            <h3 class="text-lg font-semibold text-slate-900">Planes de Pago Flexibles</h3>
-            <p class="mt-3 text-sm text-slate-600">Ofrece cuotas personalizadas, recordatorios automáticos y convenios con 0% interés cuando lo necesites.</p>
+          <div class="bg-white rounded-2xl p-6 shadow-md border-t-4 border-emerald-500">
+            <h3 class="text-lg font-bold text-slate-900">Registra ventas y abonos en segundos</h3>
+            <p class="mt-3 text-sm text-slate-600">Más rápido que buscar lápiz y papel.</p>
           </div>
-          <div class="bg-white rounded-2xl p-6 shadow-md">
-            <h3 class="text-lg font-semibold text-slate-900">Registro de Pagos y Abonos</h3>
-            <p class="mt-3 text-sm text-slate-600">Documenta abonos, notas de crédito y actualizaciones de forma rápida para todo tu equipo.</p>
+          <div class="bg-white rounded-2xl p-6 shadow-md border-t-4 border-emerald-500">
+            <h3 class="text-lg font-bold text-slate-900">Historial completo</h3>
+            <p class="mt-3 text-sm text-slate-600">Si un cliente reclama, muéstrale el historial detallado al instante.</p>
           </div>
-          <div class="bg-white rounded-2xl p-6 shadow-md">
-            <h3 class="text-lg font-semibold text-slate-900">Historial y Recibos</h3>
-            <p class="mt-3 text-sm text-slate-600">Genera recibos, descarga estados y conserva el historial completo para auditorías y reportes.</p>
+          <div class="bg-white rounded-2xl p-6 shadow-md border-t-4 border-emerald-500">
+            <h3 class="text-lg font-bold text-slate-900">Respaldo automático</h3>
+            <p class="mt-3 text-sm text-slate-600">Si pierdes tu celular, no pierdes tus datos. Todo queda en la nube.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="precios" class="py-16 md:py-24 bg-white">
+    <section class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-slate-900 mb-10">Lo que dicen otros dueños de negocio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100">
+                    <p class="text-slate-600 italic mb-4">"Antes me daba vergüenza cobrar, ahora les muestro el detalle en mi celular y me pagan altiro."</p>
+                    <p class="font-bold text-slate-900">— Claudia, Almacén "La Esquina"</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100">
+                    <p class="text-slate-600 italic mb-4">"Perdía mucha plata porque se me olvidaba anotar. Con esto no se me pasa ni una."</p>
+                    <p class="font-bold text-slate-900">— Pedro, Minimarket "Don Pedro"</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100">
+                    <p class="text-slate-600 italic mb-4">"Lo mejor es saber exactamente cuánto me deben en total. Me ordenó la vida."</p>
+                    <p class="font-bold text-slate-900">— Marcela, Verdulería</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="precios" class="py-16 md:py-24 bg-slate-900 text-white">
       <div class="max-w-4xl mx-auto px-4 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Un precio simple, sin sorpresas.</h2>
-        <p class="mt-4 text-slate-600">Tarifa plana pensada para empresas que valoran la claridad y necesitan crecer sin costos inesperados.</p>
-        <div class="mt-12 bg-slate-900 text-white rounded-3xl shadow-xl p-10 md:p-12">
-          <div class="text-sm uppercase tracking-widest text-emerald-300">Plan Profesional</div>
+        <h2 class="text-3xl md:text-4xl font-bold">Un precio simple, sin sorpresas.</h2>
+        <p class="mt-4 text-slate-300">Recuperar un solo fiado paga tu suscripción del mes.</p>
+        
+        <div class="mt-12 bg-white text-slate-900 rounded-3xl shadow-xl p-8 md:p-12 max-w-lg mx-auto relative">
+          
+          <div class="text-sm uppercase tracking-widest text-emerald-600 font-bold">Plan Profesional</div>
           <div class="mt-4 flex items-baseline justify-center space-x-2">
-            <span class="text-5xl font-bold">$14.990</span>
-            <span class="text-sm">CLP / mes</span>
+            <span class="text-5xl font-extrabold">$14.990</span>
+            <span class="text-sm font-medium text-slate-500">CLP / mes</span>
           </div>
-          <p class="mt-2 text-sm text-slate-300">Precio final. Sin + IVA.</p>
-          <ul class="mt-8 space-y-3 text-left max-w-sm mx-auto">
-            <li class="flex items-start space-x-3"><span class="mt-1 w-2.5 h-2.5 rounded-full bg-emerald-400"></span><span>Usuarios ilimitados para tu equipo financiero.</span></li>
-            <li class="flex items-start space-x-3"><span class="mt-1 w-2.5 h-2.5 rounded-full bg-emerald-400"></span><span>Reportes automáticos y exportación en CSV.</span></li>
-            <li class="flex items-start space-x-3"><span class="mt-1 w-2.5 h-2.5 rounded-full bg-emerald-400"></span><span>Soporte prioritario con especialistas en cobranza.</span></li>
-            <li class="flex items-start space-x-3"><span class="mt-1 w-2.5 h-2.5 rounded-full bg-emerald-400"></span><span>Actualizaciones constantes incluidas.</span></li>
+          <p class="mt-2 text-sm text-slate-400">Precio final.</p>
+
+          <ul class="mt-8 space-y-3 text-left max-w-sm mx-auto text-slate-600">
+            <li class="flex items-start space-x-3"><span class="text-emerald-500 font-bold">✓</span> <span>Clientes y fiados ilimitados</span></li>
+            <li class="flex items-start space-x-3"><span class="text-emerald-500 font-bold">✓</span> <span>Reportes automáticos</span></li>
+            <li class="flex items-start space-x-3"><span class="text-emerald-500 font-bold">✓</span> <span>Soporte prioritario</span></li>
+            <li class="flex items-start space-x-3"><span class="text-emerald-500 font-bold">✓</span> <span>Respaldo seguro en la nube</span></li>
           </ul>
-          <a href="https://www.mercadopago.cl/subscriptions/checkout?preapproval_plan_id=f8b38f7cc9504d06ad0f503ef2edba68" class="mt-10 inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 hover:bg-emerald-100 transition">Comienza tu Prueba de 7 Días</a>
+          
+          <div class="bg-blue-50 border border-blue-100 rounded-lg p-4 mt-8 mb-6 text-left">
+             <p class="font-bold text-blue-800 text-sm mb-1">💳 ¿Por qué pedimos tu tarjeta?</p>
+             <p class="text-xs text-blue-700 leading-snug">
+                Para activar tu prueba gratuita y evitar que tu cuenta se interrumpa después de los 7 días. 
+                <strong>No se te cobrará nada hoy.</strong> Puedes cancelar cuando quieras. Sin letra chica.
+             </p>
+          </div>
+
+          <a href="https://www.mercadopago.cl/subscriptions/checkout?preapproval_plan_id=f8b38f7cc9504d06ad0f503ef2edba68" class="block w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-4 rounded-xl text-lg shadow-lg transition transform hover:-translate-y-1">
+            ➡ Comenzar mi prueba gratuita (sin cobro hoy)
+          </a>
+          
         </div>
       </div>
     </section>
@@ -338,19 +415,30 @@
     <section id="faq" class="py-16 md:py-24 bg-slate-50">
       <div class="max-w-4xl mx-auto px-4">
         <h2 class="text-3xl md:text-4xl font-bold text-slate-900 text-center">Preguntas Frecuentes</h2>
-        <p class="mt-4 text-center text-slate-600">Resolvemos tus dudas más comunes para que avances con confianza.</p>
+        
         <div class="mt-10 space-y-6">
-          <details class="bg-white rounded-2xl p-6 shadow-md">
-            <summary class="text-lg font-semibold text-slate-900 cursor-pointer">¿Necesito tarjeta de crédito para empezar?</summary>
-            <p class="mt-3 text-slate-600">No para registrarte en la lista. El email que te enviaremos te guiará al registro en la plataforma donde sí te pediremos tus datos de pago para activar la prueba y asegurar que tu cuenta quede protegida.</p>
+          <details class="bg-white rounded-2xl p-6 shadow-md border border-slate-200">
+            <summary class="text-lg font-bold text-slate-900 cursor-pointer list-none flex justify-between items-center">
+                ¿Necesito tarjeta para empezar?
+                <span class="text-emerald-500 text-xl">+</span>
+            </summary>
+            <p class="mt-3 text-slate-600">Sí, para activar tu prueba gratuita. <strong>Tu tarjeta no será cobrada hoy</strong> y puedes cancelar en cualquier momento antes de que terminen los 7 días.</p>
           </details>
-          <details class="bg-white rounded-2xl p-6 shadow-md">
-            <summary class="text-lg font-semibold text-slate-900 cursor-pointer">¿Cuánto demora la implementación?</summary>
-            <p class="mt-3 text-slate-600">En promedio, nuestros clientes cargan su cartera y configuran recordatorios en menos de 48 horas gracias a nuestras plantillas y acompañamiento experto.</p>
+
+          <details class="bg-white rounded-2xl p-6 shadow-md border border-slate-200">
+            <summary class="text-lg font-bold text-slate-900 cursor-pointer list-none flex justify-between items-center">
+                ¿Es difícil de usar?
+                <span class="text-emerald-500 text-xl">+</span>
+            </summary>
+            <p class="mt-3 text-slate-600">No. Si sabes usar WhatsApp, sabes usar Mis Créditos. Está creado para que no pierdas tiempo.</p>
           </details>
-          <details class="bg-white rounded-2xl p-6 shadow-md">
-            <summary class="text-lg font-semibold text-slate-900 cursor-pointer">¿Puedo invitar a mi contador o asesor externo?</summary>
-            <p class="mt-3 text-slate-600">Sí. Mis Créditos permite usuarios ilimitados para que puedas compartir la información con quien necesites y mantener el control centralizado.</p>
+
+          <details class="bg-white rounded-2xl p-6 shadow-md border border-slate-200">
+            <summary class="text-lg font-bold text-slate-900 cursor-pointer list-none flex justify-between items-center">
+                ¿Puedo usarlo en varios celulares?
+                <span class="text-emerald-500 text-xl">+</span>
+            </summary>
+            <p class="mt-3 text-slate-600">Sí. Puedes abrir tu cuenta en tu celular, tablet o computador. Todo se actualiza al instante.</p>
           </details>
         </div>
       </div>
