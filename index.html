@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mis Créditos | No más fiados olvidados</title>
-  
+
   <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -23,113 +23,9 @@
   </noscript>
   <meta name="description" content="Deja de perder plata por fiados olvidados. Controla tu negocio desde el celular con Mis Créditos." />
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <style>
-    /* Reset de contenedores Brevo */
-    #sib-form-container {
-      max-width: 100% !important;
-      background: transparent !important;
-      padding: 0 !important;
-      margin: 0 !important;
-      border: none !important;
-      text-align: left !important;
-    }
-    #sib-container {
-      background: transparent !important;
-      border: none !important;
-      padding: 0 !important;
-    }
-
-    /* Ocultar etiquetas innecesarias */
-    .sib-form-block p { display: none !important; } 
-    .entry__label { display: none !important; }
-    .entry__specification { display: none !important; }
-
-    /* Inputs estilo Tailwind */
-    #sib-container input.input {
-      width: 100% !important;
-      background-color: #fff !important;
-      border: 1px solid #cbd5e1 !important;
-      border-radius: 0.375rem !important;
-      padding: 0.75rem 1rem !important;
-      font-size: 1rem !important;
-      color: #0f172a !important;
-      margin-top: 0 !important;
-      box-sizing: border-box !important;
-      transition: all 0.2s;
-    }
-    #sib-container input.input:focus {
-      outline: 2px solid #10b981 !important;
-      border-color: #10b981 !important;
-    }
-
-    /* Espaciado */
-    .sib-input {
-      padding: 0 !important;
-      margin-bottom: 1rem !important;
-    }
-    .form__entry {
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-
-    /* BOTÓN ESTILO TAILWIND + LOADER */
-    .sib-form-block__button {
-      width: 100% !important;
-      background-color: #10b981 !important; /* emerald-500 */
-      color: #ffffff !important;
-      font-weight: 700 !important;
-      padding: 0.75rem 1rem !important;
-      border-radius: 0.375rem !important;
-      border: none !important;
-      font-size: 1.1rem !important; 
-      cursor: pointer !important;
-      transition: background-color 0.3s !important;
-      display: flex !important;
-      justify-content: center !important;
-      align-items: center !important;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    }
-    .sib-form-block__button:hover {
-      background-color: #059669 !important; /* emerald-600 */
-      transform: translateY(-1px);
-    }
-
-    /* Animación del Loader */
-    .sib-loader-icon {
-      width: 1.25rem !important;
-      height: 1.25rem !important;
-      margin-right: 0.5rem !important;
-      fill: #ffffff;
-      animation: sib-spin 1s linear infinite;
-    }
-    .sib-hide-loader-icon {
-      display: none !important;
-    }
-    @keyframes sib-spin {
-      100% { transform: rotate(360deg); }
-    }
-
-    /* Mensajes de Error/Exito */
-    #error-message, #success-message {
-        display: none;
-        padding: 10px;
-        border-radius: 6px;
-        margin-bottom: 15px;
-        font-size: 14px;
-    }
-    .sib-form-message-panel--active {
-        display: block !important;
-    }
-    #success-message { background-color: #d1fae5 !important; border: 1px solid #34d399 !important; color: #065f46 !important; }
-    #error-message { background-color: #fee2e2 !important; border: 1px solid #f87171 !important; color: #991b1b !important; }
-    
-    .sib-form-message-panel__text { display: flex; align-items: center; gap: 8px; }
-    .sib-icon { width: 16px; height: 16px; }
-  </style>
 </head>
 <body class="bg-slate-50 text-slate-900 font-sans">
-  
+
   <header class="sticky top-0 z-50 bg-white shadow-md">
     <div class="max-w-6xl mx-auto px-4">
       <nav class="flex items-center justify-between py-4">
@@ -160,98 +56,40 @@
 
   <main>
     <section id="hero" class="bg-gradient-to-b from-slate-100 to-white py-12 md:py-20">
-      <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <h1 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+      <div class="max-w-4xl mx-auto px-4 flex flex-col items-center text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
              💸 Deja de perder plata por fiados olvidados
-          </h1>
-          
-          <p class="mt-6 text-xl text-slate-700 leading-relaxed font-medium">
+        </h1>
+
+        <p class="mt-6 text-xl text-slate-700 leading-relaxed font-medium">
             Sabe quién te debe, cuánto y desde cuándo. Todo desde tu celular.
-          </p>
+        </p>
 
-          <ul class="mt-8 space-y-4 text-slate-600">
-            <li class="flex items-center space-x-3">
-              <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 font-bold text-lg">✓</span>
-              <span class="text-lg">Registra clientes y fiados en segundos</span>
-            </li>
-            <li class="flex items-center space-x-3">
-              <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 font-bold text-lg">✓</span>
-              <span class="text-lg">Visualiza tu total por cobrar al instante</span>
-            </li>
-            <li class="flex items-center space-x-3">
-              <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 font-bold text-lg">✓</span>
-              <span class="text-lg">El sistema te recuerda los cobros</span>
-            </li>
-            <li class="flex items-center space-x-3">
-              <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 font-bold text-lg">✓</span>
-              <span class="text-lg">Tus clientes pagan más rápido cuando ven control</span>
-            </li>
-          </ul>
+        <div class="mt-8">
+             <ul class="space-y-4 text-slate-600 text-left inline-block">
+                <li class="flex items-center space-x-3">
+                  <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 font-bold text-lg">✓</span>
+                  <span class="text-lg">Registra clientes y fiados en segundos</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                  <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 font-bold text-lg">✓</span>
+                  <span class="text-lg">Visualiza tu total por cobrar al instante</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                  <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 font-bold text-lg">✓</span>
+                  <span class="text-lg">El sistema te recuerda los cobros</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                  <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 font-bold text-lg">✓</span>
+                  <span class="text-lg">Tus clientes pagan más rápido cuando ven control</span>
+                </li>
+             </ul>
         </div>
-        
-        <div id="hero-form" class="bg-white rounded-2xl shadow-xl p-8 border border-slate-100">
-          <h2 class="text-2xl font-bold text-slate-900 mb-2">Comienza ahora</h2>
-          <p class="text-sm text-slate-500 mb-6">Crea tu cuenta en 1 minuto.</p>
-          
-          <div id="sib-form-container" class="sib-form-container">
-            <div id="error-message" class="sib-form-message-panel">
-              <div class="sib-form-message-panel__text">
-                <span class="sib-form-message-panel__inner-text">Hubo un error. Inténtalo de nuevo.</span>
-              </div>
-            </div>
-            <div id="success-message" class="sib-form-message-panel">
-              <div class="sib-form-message-panel__text">
-                <span class="sib-form-message-panel__inner-text">¡Registro exitoso!</span>
-              </div>
-            </div>
 
-            <div id="sib-container">
-              <form id="sib-form" method="POST" action="https://a6fb54d6.sibforms.com/serve/MUIFAHriqH3bXFGkxSOIML0fICU8tFt0kiF4zVL7RalTIvtQ92lFvqxNx8v6MP7AssXDv7IsrERhX1l_0NaYx8kqAiM2wqaFTeba1cGST2vG4OftDBzKlGIba6b6MoDQIbi6lkIJplfBJ5utQLtKndXDaa72Qo6j2BzsDY4g9TOghKmBPXvcnvYtgR3RTX-Vy67ovj84mZPpXwt7mg==" data-type="subscription">
-                
-                <div class="sib-input sib-form-block">
-                  <div class="form__entry entry_block">
-                    <div class="form__label-row">
-                      <div class="entry__field">
-                        <input class="input" type="text" id="FIRSTNAME" name="FIRSTNAME" autocomplete="off" placeholder="Tu Nombre" data-required="true" required />
-                      </div>
-                    </div>
-                    <label class="entry__error entry__error--primary" style="font-size:13px; text-align:left; color:#991b1b;"></label>
-                  </div>
-                </div>
-
-                <div class="sib-input sib-form-block">
-                  <div class="form__entry entry_block">
-                    <div class="form__label-row">
-                      <div class="entry__field">
-                        <input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Tu Correo" data-required="true" required />
-                      </div>
-                    </div>
-                    <label class="entry__error entry__error--primary" style="font-size:13px; text-align:left; color:#991b1b;"></label>
-                  </div>
-                </div>
-
-                <div style="padding: 10px 0;">
-                  <div class="sib-form-block" style="text-align: left">
-                    <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">
-                      <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon sib-loader-icon" viewBox="0 0 512 512">
-                        <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
-                      </svg>
-                      ➡ Comenzar mi prueba gratuita (sin cobro hoy)
-                    </button>
-                  </div>
-                </div>
-
-                <input type="text" name="email_address_check" value="" class="input--hidden">
-                <input type="hidden" name="locale" value="es">
-              </form>
-            </div>
-          </div>
-          
-          <p class="text-xs text-slate-500 text-center mt-3">
-             🔒 Tu prueba es gratis por 7 días. No se cobra nada hoy.
-          </p>
-
+        <div class="mt-10">
+            <a href="https://app.miscreditos.cl/" class="inline-flex items-center px-8 py-4 bg-emerald-500 text-white rounded-full text-lg font-bold hover:bg-emerald-600 transition shadow-lg transform hover:-translate-y-1">
+                Ingresar ahora
+            </a>
         </div>
       </div>
     </section>
@@ -259,7 +97,7 @@
     <section id="como-funciona" class="bg-white py-16">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">Cómo funciona en 10 segundos</h2>
-            
+
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="flex flex-col items-center text-center">
                     <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-3xl mb-4">
@@ -267,7 +105,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-2">1️⃣ Registra un cliente</h3>
                     <p class="text-slate-600 mb-4">Nombre y número en 5 segundos.</p>
-                    <img src="captura1.png" alt="Registra un cliente" class="w-full h-auto rounded-lg shadow-lg border border-slate-200">
+                    <img src="paso1.PNG" alt="Registra un cliente" class="w-full h-auto rounded-lg shadow-lg border border-slate-200">
                 </div>
 
                 <div class="flex flex-col items-center text-center">
@@ -276,7 +114,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-2">2️⃣ Anota un fiado o abono</h3>
                     <p class="text-slate-600 mb-4">El sistema calcula todo por ti.</p>
-                    <img src="caprura2.png" alt="Anota un fiado" class="w-full h-auto rounded-lg shadow-lg border border-slate-200">
+                    <img src="paso2.PNG" alt="Anota un fiado" class="w-full h-auto rounded-lg shadow-lg border border-slate-200">
                 </div>
 
                 <div class="flex flex-col items-center text-center">
@@ -285,7 +123,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-2">3️⃣ Recibe recordatorios</h3>
                     <p class="text-slate-600 mb-4">Olvida los cuadernos. Nunca más pierdas un cobro.</p>
-                    <img src="captura 3.png" alt="Recibe recordatorios" class="w-full h-auto rounded-lg shadow-lg border border-slate-200">
+                    <img src="paso3.PNG" alt="Recibe recordatorios" class="w-full h-auto rounded-lg shadow-lg border border-slate-200">
                 </div>
             </div>
         </div>
@@ -295,13 +133,13 @@
       <div class="max-w-4xl mx-auto px-4 text-center">
         <h2 class="text-3xl font-bold text-white mb-4">Ver es Creer</h2>
         <p class="mb-8 text-slate-300">Descubre en minutos cómo Mis Créditos transforma tu negocio.</p>
-        
+
         <div class="relative aspect-video w-full rounded-2xl shadow-lg overflow-hidden bg-black border-4 border-slate-700">
-          <iframe 
-            class="absolute top-0 left-0 w-full h-full" 
-            src="https://player.vimeo.com/video/1137431497?title=0&byline=0&portrait=0" 
-            frameborder="0" 
-            allow="autoplay; fullscreen; picture-in-picture" 
+          <iframe
+            class="absolute top-0 left-0 w-full h-full"
+            src="https://player.vimeo.com/video/1137431497?title=0&byline=0&portrait=0"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
             allowfullscreen>
           </iframe>
         </div>
@@ -312,7 +150,7 @@
       <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-3xl md:text-4xl font-bold text-slate-900 text-center">Tu negocio, pero con más control</h2>
         <p class="mt-4 text-center text-slate-600 max-w-3xl mx-auto">La herramienta que usan los almacenes que quieren crecer ordenados.</p>
-        
+
         <div class="mt-12 grid gap-8 md:grid-cols-3">
           <div class="bg-slate-50 rounded-2xl p-8 shadow-md hover:shadow-lg transition">
             <h3 class="text-xl font-bold text-emerald-700">Claridad Total</h3>
@@ -333,7 +171,7 @@
     <section id="caracteristicas" class="py-16 md:py-24 bg-gradient-to-b from-white to-slate-100">
       <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-3xl md:text-4xl font-bold text-slate-900 text-center">Todo lo que necesitas para reemplazar tu cuaderno</h2>
-        
+
         <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div class="bg-white rounded-2xl p-6 shadow-md border-t-4 border-emerald-500">
             <h3 class="text-lg font-bold text-slate-900">Panel simple para ver todo tu dinero</h3>
@@ -379,9 +217,9 @@
       <div class="max-w-4xl mx-auto px-4 text-center">
         <h2 class="text-3xl md:text-4xl font-bold">Un precio simple, sin sorpresas.</h2>
         <p class="mt-4 text-slate-300">Recuperar un solo fiado paga tu suscripción del mes.</p>
-        
+
         <div class="mt-12 bg-white text-slate-900 rounded-3xl shadow-xl p-8 md:p-12 max-w-lg mx-auto relative">
-          
+
           <div class="text-sm uppercase tracking-widest text-emerald-600 font-bold">Plan Profesional</div>
           <div class="mt-4 flex items-baseline justify-center space-x-2">
             <span class="text-5xl font-extrabold">$14.990</span>
@@ -395,11 +233,11 @@
             <li class="flex items-start space-x-3"><span class="text-emerald-500 font-bold">✓</span> <span>Soporte prioritario</span></li>
             <li class="flex items-start space-x-3"><span class="text-emerald-500 font-bold">✓</span> <span>Respaldo seguro en la nube</span></li>
           </ul>
-          
+
           <div class="bg-blue-50 border border-blue-100 rounded-lg p-4 mt-8 mb-6 text-left">
              <p class="font-bold text-blue-800 text-sm mb-1">💳 ¿Por qué pedimos tu tarjeta?</p>
              <p class="text-xs text-blue-700 leading-snug">
-                Para activar tu prueba gratuita y evitar que tu cuenta se interrumpa después de los 7 días. 
+                Para activar tu prueba gratuita y evitar que tu cuenta se interrumpa después de los 7 días.
                 <strong>No se te cobrará nada hoy.</strong> Puedes cancelar cuando quieras. Sin letra chica.
              </p>
           </div>
@@ -407,7 +245,7 @@
           <a href="https://www.mercadopago.cl/subscriptions/checkout?preapproval_plan_id=f8b38f7cc9504d06ad0f503ef2edba68" class="block w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-4 rounded-xl text-lg shadow-lg transition transform hover:-translate-y-1">
             ➡ Comenzar mi prueba gratuita (sin cobro hoy)
           </a>
-          
+
         </div>
       </div>
     </section>
@@ -415,7 +253,7 @@
     <section id="faq" class="py-16 md:py-24 bg-slate-50">
       <div class="max-w-4xl mx-auto px-4">
         <h2 class="text-3xl md:text-4xl font-bold text-slate-900 text-center">Preguntas Frecuentes</h2>
-        
+
         <div class="mt-10 space-y-6">
           <details class="bg-white rounded-2xl p-6 shadow-md border border-slate-200">
             <summary class="text-lg font-bold text-slate-900 cursor-pointer list-none flex justify-between items-center">
@@ -473,24 +311,8 @@
   </footer>
 
   <script>
-    window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
-    window.LOCALE = 'es';
-    window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "La información ingresada no es válida. Por favor, verifica el formato.";
-    window.REQUIRED_ERROR_MESSAGE = "Este campo es obligatorio.";
-    window.GENERIC_INVALID_MESSAGE = "La información ingresada no es válida. Por favor, verifica el formato.";
-    window.translation = {
-      common: {
-        selectedList: '{quantity} list selected',
-        selectedLists: '{quantity} lists selected',
-        selectedOption: '{quantity} selected',
-        selectedOptions: '{quantity} selected',
-      }
-    };
-    var AUTOHIDE = Boolean(0);
-    
     // Año dinámico
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-  <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 </body>
 </html>
